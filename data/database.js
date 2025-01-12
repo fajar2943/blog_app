@@ -3,7 +3,7 @@ const MongoClient=mongodb.MongoClient;
 let database; 
 async function connect(){ 
   // const client = await MongoClient.connect('mongodb+srv://root:rahasia@gumilang.nzf4r.mongodb.net/?retryWrites=true&w=majority&appName=gumilang'); 
-  const client = await MongoClient.connect('localhost:27017'); 
+  const client = await MongoClient.connect('mongodb://localhost:27017'); 
   database = client.db('blog'); 
 } 
  
